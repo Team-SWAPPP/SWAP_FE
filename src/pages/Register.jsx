@@ -6,8 +6,8 @@ const Regiser = () => {
     <Div>
       <Header />
       <Box>
-        <Hyemin>
-          <LoginSection>
+        <Content>
+          <RegisterSection>
             <Title>회원가입</Title>
             <Input name="email" placeholder="학교 이메일을 작성하세요"></Input>
             <Input name="아이디" placeholder="아이디를 입력하세요"></Input>
@@ -17,11 +17,11 @@ const Regiser = () => {
               placeholder="비밀번호를 입력하세요"
             ></Input>
             <Button>로그인</Button>
+          </RegisterSection>
+          <LoginSection>
+            <LoginBtn>로그인 화면으로 돌아가기</LoginBtn>
           </LoginSection>
-          <Tie>
-            <RegisetBtn>로그인 화면으로 돌아가기</RegisetBtn>
-          </Tie>
-        </Hyemin>
+        </Content>
       </Box>
     </Div>
   );
@@ -70,19 +70,19 @@ const Button = styled.button`
   font-size: 18px;
 `;
 
-const LoginSection = styled.div`
+const RegisterSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 `;
-const Tie = styled.div`
+const LoginSection = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-const RegisetBtn = styled.button`
+const LoginBtn = styled.button`
   color: #6b7280;
   border: none;
   background-color: #ffffff;
@@ -90,6 +90,6 @@ const RegisetBtn = styled.button`
   cursor: pointer;
 `;
 
-const Hyemin = styled.div`
+const Content = styled.div`
   margin-top: 28px;
 `;
